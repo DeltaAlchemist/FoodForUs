@@ -5,8 +5,6 @@ const DivHome = styled.div`
 
 ` 
 
-
-
 const Home = () => {
     return(
         <div className="pusher">
