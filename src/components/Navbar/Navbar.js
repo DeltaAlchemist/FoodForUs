@@ -18,7 +18,7 @@ export const Navbar = () => {
                     <a className="ui button">Log in</a>
                 </div>
                 <div className="item">
-                    <a className="ui primary button">Registrar</a>
+                    <a className="ui primary button" style={{ marginLeft: '2px' }}>Registrar</a>
                 </div>
             </div>
         </div>
