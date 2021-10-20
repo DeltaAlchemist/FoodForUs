@@ -25,7 +25,7 @@ export const Menu = () => {
 
     return(
         <MenuDiv>
-            <div className="ui large secondary inverted pointing menu">
+            <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#1b1c1d"}}>
                 <img src={Logo} alt="logo"/>
                 <a className="active item">Home</a>
                 <a className="item">Symbot</a>
