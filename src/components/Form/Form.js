@@ -1,25 +1,11 @@
 import React from 'react';
 
-import { TextField, Button, makeStyles } from '@material-ui/core';
+import { TextField, Button } from '@material-ui/core';
 import { useForm, Controller } from 'react-hook-form';
 
-const useStyles = makeStyles(theme => ({
-	root: {
-		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'center',
-		alignItems: 'center',
-		padding: theme.spacing(2),
+import { InputMask } from '../InputMask';
 
-		'& .MuiTextField-root': {
-			margin: theme.spacing(1),
-			width: '300px',
-		},
-		'& .MuiButtonBase-root': {
-			margin: theme.spacing(2),
-		},
-	},
-}));
+import useStyles from './Form.style';
 
 const Form = ({ handleClose }) => {
 
@@ -41,7 +27,8 @@ const Form = ({ handleClose }) => {
 					<TextField 
 						label="Nome"
 						variant="filled"
-						value={onChange}
+						value={value}
+						onChange={onChange}
 						error={!!error}
 						helperText={ error ? error.message : null }
 					/>
@@ -49,20 +36,23 @@ const Form = ({ handleClose }) => {
 				rules = {{ required: 'Nome é obrigatório' }}
 			/>
 			<Controller
-				name="lastName"
+				name="birthday"
 				control={control}
 				defaultValue=""
 				render={({ field: { onChange, value }, fieldState: { error } }) => (
 					<TextField
-						label="Sobrenome"
+						label="Data de Nascimento"
 						variant="filled"
+						defaultValue=""
 						value={value}
 						onChange={onChange}
 						error={!!error}
 						helperText={error ? error.message : null}
+						InputLabelProps={{ shrink: true }}
+						type="date"
 					/>
 				)}
-				rules={{ required: 'Sobrenome é obrigatório' }}
+				rules={{ required: 'Data de nascimento é obrigatória' }}
 			/>
 			<Controller
 				name="email"
@@ -97,6 +87,14 @@ const Form = ({ handleClose }) => {
 					/>
 				)}
 				rules={{ required: 'Senha é obrigatória' }}
+			/>
+			<Controller
+				name="phone"
+				control={control}
+				defaultValue=""
+				render={() => (
+					<InputMask />
+				)}
 			/>
 			<div>
 				<Button variant="contained" onClick={handleClose}>
