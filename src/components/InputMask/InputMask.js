@@ -1,56 +1,25 @@
 import React, { useState } from "react";
-import MaskedInput from "react-text-mask";
-import PropTypes from "prop-types";
-import { useStyles } from "./InputMask.style";
-import { FormControl, InputLabel, Input } from "@material-ui/core";
 
-function TextMaskCustom(props) {
-    const { inputRef, ...other } = props;
+import { MuiThemeProvider } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import InputMask from "react-input-mask";
 
-    return(
-        <MaskedInput 
-            {...other}
-            ref={(ref) => {
-                inputRef(ref ? ref.inputElement : null);
-            }}
-            mask={['(', /[1-9]/, /[1-9]/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-            placeholderChar={'\u2000'}
-            showMask
-        />
-    );
+export const InputMaskComp = () => {
+
+  const [value, setValue] = useState(null)
+
+  return (
+    <MuiThemeProvider>
+      <InputMask
+          onChange={event => setValue(event.target.value)}
+          mask="(99) 99999-9999"
+          value={value}
+          disabled={false}
+          maskChar=" "
+      >
+          {() => <TextField variant="filled" label="Telefone"/>}
+      </InputMask>
+    </MuiThemeProvider>
+  );
+  
 }
-
-TextMaskCustom.propTypes = {
-    inputRef: PropTypes.func.isRequired,
-};
-
-export const InputMask = () => {
-    const classes = useStyles();
-    const [values, setValues] = useState({
-        textmask: '(  )     -    ',
-        numberformat: '1320',
-    });
-
-    const handleChange = (event) => {
-        setValues({
-            ...values,
-            [event.target.name]: event.target.value,
-        });
-    };
-
-    return(
-        <div className={classes.root}>
-            <FormControl>
-                <InputLabel htmlFor="telefone">Telefone</InputLabel>
-                <Input 
-                    value={values.textmask}
-                    onChange={handleChange}
-                    name="textmask"
-                    id="telefone"
-                    inputComponent={TextMaskCustom}
-                />
-            </FormControl>
-        </div>
-    );
-}
-

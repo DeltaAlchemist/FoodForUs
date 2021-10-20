@@ -3,7 +3,7 @@ import React from 'react';
 import { TextField, Button } from '@material-ui/core';
 import { useForm, Controller } from 'react-hook-form';
 
-import { InputMask } from '../InputMask';
+import { InputMaskComp } from '../InputMask';
 
 import useStyles from './Form.style';
 
@@ -93,7 +93,7 @@ const Form = ({ handleClose }) => {
 				control={control}
 				defaultValue=""
 				render={() => (
-					<InputMask />
+					<InputMaskComp />
 				)}
 			/>
 			<div>
