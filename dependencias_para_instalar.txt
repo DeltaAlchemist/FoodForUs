@@ -7,7 +7,7 @@ npm install axios
 npm install --save react-router-dom
 npm install @material-ui/core
 npm install @material-ui/icons
-npm i react-text-mask --save
 npm i react-number-format
+npm i react-input-mask
 
 Adicionar no index.html
