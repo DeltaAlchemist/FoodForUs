@@ -7,12 +7,6 @@ import imgcard6 from '../img/card6.jpg'
 const Artigos = () => {
 
     return(
-<<<<<<< HEAD
-        <div className="pusher">
-            <div class="ui items"><br/>
-                <div class="item"><br/>
-                    <div class="image">
-=======
         <div className="pusher" style={{backgroundColor: '#4d4d4d', height: '100vh'}}>
             <div className="ui inverted vertical masthed center aligned segment" style={{ display: 'block' }}>
                 <div className="ui container">
@@ -23,7 +17,6 @@ const Artigos = () => {
             <div className="ui items"><br/>
                 <div className="item"><br/>
                     <div className="image">
->>>>>>> da85cbd19c3ea07e5716d1d8dfbfa6c26a98bf24
                         <img src= {imgcard1}/>
                     </div>
                     <div className="content">
