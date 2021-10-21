@@ -8,11 +8,6 @@ const Artigos = () => {
 
     return(
         <div className="pusher">
-            <div className="ui inverted vertical masthed center aligned segment" style={{ display: 'block' }}>
-                <div className="ui container">
-                    <Menu />
-                </div>
-            </div>
             <div class="ui items"><br/>
                 <div class="item"><br/>
                     <div class="image">

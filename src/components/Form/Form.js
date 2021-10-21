@@ -19,6 +19,7 @@ const Form = ({ handleClose }) => {
 
 	return (
 		<form className={classes.root} onSubmit={handleSubmit(onSubmit)}>
+			<h2 className="ui center aligned header" style={{ marginTop: '6px' }}>Registre-se!</h2>
 			<Controller 
 				name="firstName"
 				control={control}
