@@ -8,7 +8,7 @@ const MenuDiv = styled.div`
         width: 100px;
         margin-right: 15px;
     }
-
+    background-color: '#1b1c1d';
 `
 
 export const Menu = () => {
@@ -24,22 +24,24 @@ export const Menu = () => {
     }
 
     return(
-        <MenuDiv>
-            <div className="ui inverted vertical masthed center aligned segment" style={{ display: 'block' }}>
-                <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#1b1c1d"}}>
-                    <img src={Logo} alt="logo"/>
-                    <a className="active item">Home</a>
-                    <a className="item">Symbot</a>
-                    <a className="item">Artigos</a>
-                    <a className="item">Contato</a>
-                    <a className="item">Sobre</a>
-                    <div className="right item">
-                        <a className="ui inverted button">Log in</a>
-                        <a 
-                            className="ui inverted button" 
-                            style={{ marginLeft: '7.5px' }}
-                            onClick={handleOpen}
-                        >Registrar</a>
+        <MenuDiv style={{ backgroundColor: '#1b1c1d' }}>
+            <div className="ui container">
+                <div className="ui inverted vertical masthed center aligned segment" style={{ display: 'block' }}>
+                    <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#1b1c1d"}}>
+                        <img src={Logo} alt="logo"/>
+                        <a className="active item">Home</a>
+                        <a className="item">Symbot</a>
+                        <a className="item">Artigos</a>
+                        <a className="item">Contato</a>
+                        <a className="item">Sobre</a>
+                        <div className="right item">
+                            <a className="ui inverted button">Log in</a>
+                            <a 
+                                className="ui inverted button" 
+                                style={{ marginLeft: '7.5px' }}
+                                onClick={handleOpen}
+                            >Registrar</a>
+                        </div>
                     </div>
                 </div>
             </div>
