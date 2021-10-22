@@ -7,7 +7,7 @@ import imgcard6 from '../img/card6.jpg'
 const Artigos = () => {
 
     return(
-        <div className="pusher" style={{backgroundColor: '#4d4d4d', height: '100vh'}}>
+        <div className="pusher" style={{backgroundColor: 'white', height: '100vh'}}>
             <div className="ui container" style={{paddingTop: '40px'}}>
                 <div className="ui items"><br/>
                     <div className="item"><br/>
@@ -16,7 +16,7 @@ const Artigos = () => {
                         </div>
                         <div className="content">
                             <a className="header" href = "https://pebmed.com.br/ansiedade-e-o-transtorno-mais-comum-entre-os-brasileiros-durante-a-pandemia/" target = "_blank">Ansiedade é o transtorno mais comum entre os brasileiros durante a pandemia</a>
-                            <div className="meta" style={{color:'lightblue'}}>
+                            <div className="meta" style={{color:'black'}}>
                                 <span>Segundo uma pesquisa realizada pelo Ministério da Saúde, a ansiedade é o transtorno mais presente durante a pandemia de Covid-19. Além da ansiedade, encontrada em 86,5% dos respondentes, foi constatada uma presença moderada de transtorno do estresse pós-traumático (45,5%). A proporção de depressão grave foi um pouco mais baixa, 16%.</span>
                             </div>
                             <div className="description">
@@ -30,7 +30,7 @@ const Artigos = () => {
                         </div>
                         <div className="content">
                             <a className="header" href = "https://zenklub.com.br/blog/saude-bem-estar/ansiedade/" target = "_blank" >Quais são os principais sintomas da Ansiedade?</a>
-                            <div className="meta"style={{color:'lightblue'}}>
+                            <div className="meta"style={{color:'black'}}>
                                 <span>Você sabe quais são os principais sintomas que a Ansiedade pode causar? Você pode estar sofrendo de ansiedade sem saber!</span>
                             </div>
                             <div className="description">
@@ -45,7 +45,7 @@ const Artigos = () => {
                         </div>
                         <div className="content">
                             <a className="header" href = "https://psiquiatriapaulista.com.br/17-dicas-de-como-controlar-a-ansiedade/" target = "_blank">Como controlar a sua ansiedade?</a>
-                            <div className="meta"style={{color:'lightblue'}}>
+                            <div className="meta"style={{color:'black'}}>
                                 <span>Veja métodos para como controlar e diminuir seu nível de ansiedade e estresse sem sair de casa!</span>
                             </div>
                             <div className="description">
