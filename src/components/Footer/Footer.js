@@ -13,7 +13,7 @@ export const Footer = () => {
                         </div>
                     </div> */}
                     <div className="seven wide column">
-                    <h4 className="ui inverted header">Sobre nós</h4>
+                    <h4 className="ui inverted header">Sobre</h4>
                     <div className="ui inverted link list">
                         <a href="#" className="item">Sobre nós</a>
                             <a href="#" className="item">Contato</a>
@@ -22,8 +22,8 @@ export const Footer = () => {
                     </div>
                     </div>
                     <div className="seven wide column">
-                    <h4 className="ui inverted header">Obrigado pela</h4>
-                    <p>Nós agradecemos sua visita. És sempre bem vindo!</p>
+                    <h4 className="ui inverted header">Obrigado.</h4>
+                    <p>Nós agradecemos sua visita. <br/>E que a felicidade vire rotina!!</p>
                     </div>
                 </div>
             </div>

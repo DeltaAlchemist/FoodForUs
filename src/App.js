@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Artigos from './pages/Artigos';
 import Contato from './pages/Contato';
 import Sobre from './pages/Sobre';
+import { Footer } from './components/Footer/Footer';
 
 const App = () => {
     return(
@@ -16,6 +17,7 @@ const App = () => {
                 <Route path="/contato" component={Contato} />
                 <Route path="/sobre" component={Sobre} />
             </Switch>
+            <Footer/>
         </BrowserRouter>  
     );
 }

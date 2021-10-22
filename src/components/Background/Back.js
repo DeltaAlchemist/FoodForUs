@@ -39,7 +39,7 @@ h2{
   padding: 20px;
   left:0;
   right: 0;
-  top:19vh;
+  top:30vh;
   text-align: center;
   width: 100%;
 }
