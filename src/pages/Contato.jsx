@@ -13,7 +13,6 @@ const Contato = () => {
 
     return (
         <>
-        <Menu />
         <div className="ui container" style={{ marginTop:"50px", marginBottom:"50px"}}>
             <form class="ui form">
                 <DivIcon> 
