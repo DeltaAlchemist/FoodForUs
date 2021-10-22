@@ -43,7 +43,7 @@ const Contato = () => {
                 <button class="ui button" type="submit">Enviar</button>
             </form>
         </div>
-        <Footer />
+        {/* <Footer /> */}
         </>
     );
 }
