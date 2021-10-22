@@ -106,10 +106,10 @@ export default ()=> {
                             <div class="tx">
                             <h2>
                                 Olá, nós somos a Syminate.<br/>
-                                uma empresa que nasceu, (assim como todas kk) de uma ideia.<br/>
-                                Uma ideia meio mirabolante de 5 universitários, que imaginam um mundo melhor a todos.<br/>
-                                Com esse desejo, nós 5 resolvemos criar a Syminate.<br/> 
-                                Um site (e futuro aplicativo shhhh...) para ajudar adultos e adolescentes com ansiedade,<br/>
+                                Uma empresa que nasceu de uma ideia de 5 jovens em uma universidade em São Paulo.<br/>
+                                Essa ideia, visava ajudar as pessoas com ansiedade. <br/>
+                                E com isso em mente, nós 5 resolvemos criar a Syminate.<br/> 
+                                Um site que visa ajudar jovens e adultos com ansiedade,<br/>
                                 por meios de atividades, conquistas, consultas e até com nosso Raposym.<br/>
                                 Que é nossa inteligencia artificial, treinada para te auxiliar durante crises.<br/>
 
