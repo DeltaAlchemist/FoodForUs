@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Logo from "../../img/logo.png";
 import {ModalDialog, ModalLogin} from './ModalDialog';
+import { Link } from "react-router-dom";
 
 const MenuDiv = styled.div`
     img {
@@ -40,11 +41,11 @@ export const Menu = () => {
                 <div className="ui inverted vertical masthed center aligned segment" style={{ display: 'block' }}>
                     <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#1b1c1d"}}>
                         <img src={Logo} alt="logo"/>
-                        <a className="active item">Home</a>
-                        <a className="item">Symbot</a>
-                        <a className="item">Artigos</a>
-                        <a className="item">Contato</a>
-                        <a className="item">Sobre</a>
+                        <a className="active item"> <Link to = '/'>Home </Link></a>
+                    <a className="item"> <Link to = '/symbot'>Raposym </Link></a>
+                    <a className="item"> <Link to = '/artigos'>Artigos </Link></a>
+                    <a className="item"> <Link to = '/contato'>Contato </Link></a>
+                    <a className="item"> <Link to = '/sobre'>Sobre </Link></a>
                         <div className="right item">
                             <a className="ui inverted button"
                             style={{ marginLeft: '7.5px' }}
