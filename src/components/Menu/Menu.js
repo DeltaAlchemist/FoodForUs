@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Logo from "../../img/logo.png";
-import ModalDialog from './ModalDialog';
+import {ModalDialog, ModalLogin} from './ModalDialog';
 
 const MenuDiv = styled.div`
     img {
@@ -13,15 +13,26 @@ const MenuDiv = styled.div`
 
 export const Menu = () => {
 
-    const [open, setOpen] = useState(false);
+    const [openSignUp, setOpenSignUp] = useState(false);
 
-    const handleOpen = () => {
-        setOpen(true)
+    const handleOpenSignUp = () => {
+        setOpenSignUp(true)
     }
 
-    const handleClose = () => {
-        setOpen(false)
+    const handleCloseSignUp = () => {
+        setOpenSignUp(false)
     }
+
+    const [openLogin, setOpenLogin] = useState(false);
+
+    const handleOpenLogin = () => {
+        setOpenLogin(true)
+    }
+
+    const handleCloseLogin = () => {
+        setOpenLogin(false)
+    }
+
 
     return(
         <MenuDiv style={{ backgroundColor: '#1b1c1d' }}>
@@ -35,17 +46,22 @@ export const Menu = () => {
                         <a className="item">Contato</a>
                         <a className="item">Sobre</a>
                         <div className="right item">
-                            <a className="ui inverted button">Log in</a>
+                            <a className="ui inverted button"
+                            style={{ marginLeft: '7.5px' }}
+                            onClick={handleOpenLogin}
+                            
+                            >Log in</a>
                             <a 
                                 className="ui inverted button" 
                                 style={{ marginLeft: '7.5px' }}
-                                onClick={handleOpen}
+                                onClick={handleOpenSignUp}
                             >Registrar</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <ModalDialog open={open} handleClose={handleClose}/>
+            <ModalDialog open={openSignUp} handleClose={handleCloseSignUp}/>
+            <ModalLogin open={openLogin} handleClose={handleCloseLogin}/>
         </MenuDiv>
     )
 }
