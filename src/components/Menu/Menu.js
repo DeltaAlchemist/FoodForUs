@@ -42,7 +42,7 @@ export const Menu = () => {
                     <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#1b1c1d"}}>
                         <img src={Logo} alt="logo"/>
                         <a className="active item"> <Link to = '/'>Home </Link></a>
-                    <a className="item"> <Link to = '/symbot'>Raposym </Link></a>
+                    <a className="item"> <Link to = '/raposym'>Raposym </Link></a>
                     <a className="item"> <Link to = '/artigos'>Artigos </Link></a>
                     <a className="item"> <Link to = '/contato'>Contato </Link></a>
                     <a className="item"> <Link to = '/sobre'>Sobre </Link></a>
