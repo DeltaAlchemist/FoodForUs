@@ -89,3 +89,7 @@
     font-size: 1.5em;
     }
 }
+
+.ui.inverted.segment, .ui.primary.inverted.segment{
+    background: #e85d04;
+}

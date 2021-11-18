@@ -2,11 +2,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import { Menu } from './components/Menu'
 import Home from './pages/Home';
-import Artigos from './pages/Artigos';
-import Contato from './pages/Contato';
-import Sobre from './pages/Sobre';
-import Raposym from './pages/Raposym';
 import { Footer } from './components/Footer/Footer';
+import Produtos from './pages/Produtos'
+import formApi from './pages/Form'
 
 const App = () => {
     return(
@@ -14,10 +12,8 @@ const App = () => {
         <Menu />   
             <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/artigos" component={Artigos} />
-                <Route path="/contato" component={Contato} />
-                <Route path="/sobre" component={Sobre} />
-                <Route path="/raposym" component={Raposym} />
+                <Route path="/produtos" component={Produtos} />
+                <Route path="/api" component={formApi} />
             </Switch>
             <Footer/>
         </BrowserRouter>  

@@ -17,10 +17,7 @@ export const Navbar = () => {
         <div className="ui large top fixed hidden menu"> 
             <div className="ui container">
                 <a className="active item">Home</a>
-                <a className="item">Symbot</a>
-                <a className="item">Artigos</a>
-                <a className="item">Contato</a>
-                <a className="item">Sobre</a>
+                <a className="">Produtos</a>
             </div>
             <div className="right menu">
                 <div className="item">

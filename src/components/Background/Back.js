@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components'
-import card1 from '../../img/ansiedade.png'
 const DivBack = styled.div`
 h1{
     @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&family=Roboto+Mono:ital,wght@1,100&display=swap');

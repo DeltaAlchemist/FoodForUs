@@ -36,16 +36,14 @@ export const Menu = () => {
 
 
     return(
-        <MenuDiv style={{ backgroundColor: '#1b1c1d' }}>
+        <MenuDiv style={{ backgroundColor: '#e85d04;' }}>
             <div className="ui container">
                 <div className="ui inverted vertical masthed center aligned segment" style={{ display: 'block' }}>
-                    <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#1b1c1d"}}>
+                    <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#e85d04"}}>
                         <img src={Logo} alt="logo"/>
                         <a className="active item"> <Link to = '/'>Home </Link></a>
-                    <a className="item"> <Link to = '/raposym'>Raposym </Link></a>
-                    <a className="item"> <Link to = '/artigos'>Artigos </Link></a>
-                    <a className="item"> <Link to = '/contato'>Contato </Link></a>
-                    <a className="item"> <Link to = '/sobre'>Sobre </Link></a>
+                    <a className="item"> <Link to = '/produtos'>Produtos </Link></a>
+                    <a className="item"> <Link to = '/api'>Form </Link></a>
                         <div className="right item">
                             <a className="ui inverted button"
                             style={{ marginLeft: '7.5px' }}
