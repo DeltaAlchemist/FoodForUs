@@ -40,7 +40,7 @@ export const Menu = () => {
         <MenuDiv style={{ backgroundColor: '#e85d04;' }}>
             <div className="ui container" style={{width: '100%'}}>
                 <div className="ui inverted vertical masthed center aligned segment" style={{ display: 'block' }}>
-                    <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#e85d04"}}>
+                    <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#5ab86f"}}>
                         <img src={Logo} alt="logo"/>
                         <a className="active item"> <Link to = '/'>Home </Link></a>
                     <a className="item"> <Link to = '/produtos'>Produtos </Link></a>

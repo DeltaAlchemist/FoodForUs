@@ -1,14 +1,16 @@
 .header {
     margin-bottom: 150px;
+    color: #2c2c2c;
 }
 
 .body {
-    background-color: white;
+    background-image: url("../img/paper_@2X.png");
 }
 
 .hidden.menu {
     display: none;
 }
+
 .masthead.segment {
     min-height: 700px;
     padding: 1em 0em;
@@ -40,6 +42,7 @@
 .ui.vertical.stripe p + h3 {
     margin-top: 3em;
 }
+
 .ui.vertical.stripe .floated.image {
     clear: both;
 }
@@ -91,5 +94,5 @@
 }
 
 .ui.inverted.segment, .ui.primary.inverted.segment{
-    background: #e85d04;
+    background-image: url("../img/paper_@2X.png");
 }
