@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ModalDialog from '../Menu/ModalDialog';
 
+import './Navbar.css'
+
 export const Navbar = () => {
 
     const [open, setOpen] = useState(false);
@@ -14,7 +16,7 @@ export const Navbar = () => {
     }
 
     return(
-        <div className="ui large top fixed hidden menu"> 
+        <div className="ui large top fixed hidden menu navigation"> 
             <div className="ui container">
                 <a className="active item">Home</a>
                 <a className="">Produtos</a>

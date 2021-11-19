@@ -10,6 +10,7 @@ const MenuDiv = styled.div`
         margin-right: 15px;
     }
     background-color: '#1b1c1d';
+    width: 100%;
 `
 
 export const Menu = () => {
@@ -37,7 +38,7 @@ export const Menu = () => {
 
     return(
         <MenuDiv style={{ backgroundColor: '#e85d04;' }}>
-            <div className="ui container">
+            <div className="ui container" style={{width: '100%'}}>
                 <div className="ui inverted vertical masthed center aligned segment" style={{ display: 'block' }}>
                     <div className="ui large secondary inverted pointing menu" style={{ backgroundColor:"#e85d04"}}>
                         <img src={Logo} alt="logo"/>

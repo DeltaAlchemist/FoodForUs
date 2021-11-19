@@ -1,7 +1,7 @@
 import React from 'react'
 import product_card from '../components/product_data'
 import './Produtos.css'
-import img from '../img/feijao.jfif'
+import img from '../img/logo.png'
 
 const Produtos = () => {
     const listItems = product_card.map((item) => 
