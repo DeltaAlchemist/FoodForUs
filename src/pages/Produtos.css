@@ -1,3 +1,7 @@
+body {
+    background-image: url("../img/paper_@2X.png");
+}
+
 .main_content{
     display: flex;
     position: relative;
@@ -10,6 +14,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-left: 200px;
+    background-image: url("../img/paper_@2X.png");
 }
 
 .main_content h3{
