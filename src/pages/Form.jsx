@@ -49,24 +49,22 @@ const Form = (props) => {
     return(
         <>
         <div class="form-container">
-            <form class="register-form" onChange={handleSubmit}>
+            <form class="register-form">
                 <input
-                id="first-name"
-                class="form-field"
-                type="text"
-                value={produto.titulo}
-                placeholder="Nome do Produto"
-                name="codigo"
-                onChange={handleChange}
+                    class="form-field"
+                    type="text"
+                    value={produto.titulo}
+                    placeholder="Nome do Produto"
+                    name="titulo"
+                    onChange={handleChange}
                 />
                 <input
-                id="first-name"
-                class="form-field"
-                type="text"
-                value={produto.quantidade}
-                placeholder="Quantidade"
-                name="quantidade"
-                onChange={handleChange}
+                    class="form-field"
+                    type="text"
+                    value={produto.quantidade}
+                    placeholder="Quantidade"
+                    name="quantidade"
+                    onChange={handleChange}
                 />
                 <button class="form-field criar" type="submit"> Enviar </button>
             </form>
