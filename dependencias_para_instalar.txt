@@ -9,5 +9,7 @@ npm install @material-ui/core
 npm install @material-ui/icons
 npm i react-number-format
 npm i react-input-mask
+npm install bootstrap
+npm install --save styled-components
 
 Adicionar no index.html
