@@ -1,73 +1,78 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Form.css'
 
-const formApi = () => {
+const Form = (props) => {
+
+    let id = null;
+
+    if (props.match.path.toLowerCase().includes("editar")) {
+        id = props.match.params.id;
+    }
+
+    const [produto, setProduto] = useState({
+        codigo: id,
+        titulo: "",
+        quantidade: "",
+    })
+
+    let metodo = "post"
+    if (id) { metodo = "put" }
+
+    const handleChange = e => {
+        setProduto({ ...produto, [e.target.name]: e.target.value })
+    }
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        fetch(`/rest/produto/${(id ? id : "")}`, {
+            method: metodo,
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(produto)
+        }).then(() => {
+            window.location = "/"
+        })
+    }
+
+    useEffect(() => {
+        if (id) {
+            fetch(`/rest/produto/${id}`)
+            .then(resp => {
+                return resp.json()
+            }).then(resp => {
+                setProduto(resp)
+            })
+        }
+    }, [id])
+
     return(
         <>
         <div class="form-container">
-                    <form class="register-form">
+            <form class="register-form" onChange={handleSubmit}>
                 <input
                 id="first-name"
                 class="form-field"
                 type="text"
-                placeholder="cd_produto"
-                name="firstName"
+                value={produto.titulo}
+                placeholder="Nome do Produto"
+                name="codigo"
+                onChange={handleChange}
                 />
-               
                 <input
-                id="last-name"
+                id="first-name"
                 class="form-field"
                 type="text"
-                placeholder="cd_mercado"
-                name="lastName"
+                value={produto.quantidade}
+                placeholder="Quantidade"
+                name="quantidade"
+                onChange={handleChange}
                 />
-            
-                <input
-                id="email"
-                class="form-field"
-                type="text"
-                placeholder="nm_produto"
-                name="email"
-                />
-                
-                <input
-                id="last-name"
-                class="form-field"
-                type="text"
-                placeholder="ds_produto"
-                name="lastName"
-                />
-                
-                <input
-                id="last-name"
-                class="form-field"
-                type="text"
-                placeholder="dt_fabricacao"
-                name="lastName"
-                />
-
-                <input
-                id="last-name"
-                class="form-field"
-                type="text"
-                placeholder="dt_validade"
-                name="lastName"
-                />
-
-                <input
-                id="last-name"
-                class="form-field"
-                type="text"
-                placeholder="vlr_produto"
-                name="lastName"
-                />
-                <button class="form-field criar" type="submit"> Criar </button>
-                <button class="form-field deletar" type="submit"> Deletar </button>
-                <button class="form-field atualizar" type="submit"> Atualizar </button>
+                <button class="form-field criar" type="submit"> Enviar </button>
             </form>
         </div>
         </>
     )
 }
 
-export default formApi;
+export default Form;
